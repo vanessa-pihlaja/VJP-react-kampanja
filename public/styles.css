@@ -1,0 +1,446 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ECFEFF;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    background-color: rgb(196, 229, 248);
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-item {
+    display: inline;
+    font-size: x-large;
+    font-family:'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 80;
+    max-height: 30px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    padding: 8px;
+    background-color:#1e497a;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-link:hover {
+    background-color: #11132b;
+}
+
+.container3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+    color:rgb(255, 255, 255);
+    margin: 2rem;
+    text-shadow: 1px 1px 3px rgb(167, 167, 167)
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url("images/baby.etusivu.jpeg");
+    background-size: cover;
+    display: flex;
+}
+
+.hero2{
+    width: 100%;
+    height: 100vh;
+    background: url("images/toinen\ vauva\ ja\ rokote.jpg");
+    background-size: cover;
+    display: flex;
+}
+
+.hero3{
+    width: 100%;
+    height: 100vh;
+    background: url("images/vauvajapyyhe.jpg");
+    background-size: cover;
+    display: flex;
+}
+
+.video {
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    
+}
+
+
+/*Etusivun faktalaatikko*/
+
+.faktalaatikko{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.faktalaatikko::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.faktapallura{
+    background-color:#1e497a;
+    border-radius: 50%;
+    float: left;
+    width: 33.33%;
+    padding: 30px;
+    height: 27rem;
+    width: 27rem;
+    margin: 5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: cornsilk;
+    padding-top: 9.5rem;
+}
+
+.kolmaspallura{
+    transform: translateY(-10%);
+}
+
+
+/*Etusivun herättelevä-teksti*/
+
+.ht-palkki{
+    background-color:#1e497a;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+}
+.herättelevä-teksti-otsikko{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.herättelevä-teksti{
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 13rem;
+    margin-right: 13rem;
+    color: white;
+}
+
+
+/*footer*/
+
+footer{
+    padding: 4rem;
+    color:  rgb(3, 1, 17);
+    font-size: 0.5rem;
+    background-color:  rgb(196, 229, 248);
+    text-align: center;
+    position: relative;
+
+}
+
+.back-to-top{
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: rgb(196, 229, 248);
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.back-to-top i{
+    color: black;
+    font-size: 1.6rem;
+    padding: 2rem;
+}
+
+
+.footer-content h4{
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+
+
+.social-icons{
+    list-style: none;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i{
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    padding: 1rem 1.5rem;
+    transition: color .5s;
+}
+
+.logo2{
+    margin-bottom: 1rem;
+}
+
+.rokotusohjelmaholder {
+    display: flex;
+    justify-content: center;
+    background-color: #ECFEFF;
+  
+}
+
+.rokotusohjelma {
+    display: grid;
+    grid-template-columns: 15rem 15rem 20rem;
+    grid-template-rows: 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
+    padding-left: 10rem;
+    padding-top: 5rem;
+    padding-right: 10rem;
+    padding-bottom: 2rem;
+
+
+}
+
+.alustusholder {
+    display: flex;
+    background-color: #ECFEFF;
+
+    min-height: 5rem;
+    justify-content: center;
+}
+
+.alustus {
+    justify-self: left;
+    font-size: larger;
+    padding-top: 5rem;
+    max-width: 30%;
+}
+
+.alustusotsikko {
+    padding-bottom: 3rem;
+    font-size: x-large;
+}
+
+ui{
+    display: flex;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-color: black;
+    padding: 5px;
+    padding-left: 10px;
+    font-family:'Montserrat', sans-serif;
+}
+
+#toinenvauva {
+    align-self: flex-end;
+    justify-self: right ;
+    width: 33rem;
+    height: auto;
+    padding-left: 5rem;
+    border-radius: 6px;
+}
+
+.lisäysholder {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20%;
+    padding-bottom: 5rem;
+}
+
+.lisäys {
+    font-size: larger;
+    padding-top: 5rem;
+    max-width: 60%;
+}
+
+.blogiotsikko{
+    margin: 4rem;
+}
+
+.osio{
+    padding: 0.6rem;
+}
+.blogitekstinotsikko{
+    flex: 50%;
+    padding: 0.6rem;
+    margin-left: 0rem;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.blogiteksti{
+    flex: 50%;
+    padding: 0px;
+    margin-left: 10rem;
+    font-family:'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 150;
+}
+
+.blogi{
+   display: flex;
+}
+.blogikuva{
+    margin-top: 10rem;
+    margin-left: 5rem;
+    margin-left: -50px;
+    display: inline-block;
+    position: relative;
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.blogikuva img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+}
+
+.blogiosionotsikko{
+    font-size: 1.8rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-family:'Montserrat', sans-serif;
+}
+
+.disinformaatioholder {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    padding-left: 30%;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    
+}
+
+.disinformaatio-otsikko {
+    display: flex;
+    justify-self: center;
+    font-size: x-large;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    font-family:'Montserrat', sans-serif;
+}
+
+.disinformaatio {
+    justify-self: center;
+    align-self: center;
+    font-size: large;
+    padding: 1rem;
+    font-family:'Montserrat', sans-serif;
+}
+
+.Seuraa-meitä{
+    margin-top: 7rem;
+    margin-bottom: 0rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: rgb(7, 5, 27)
+}
+
+#iso{
+    font-size: xx-large;
+}
+
+#curator-feed-vdm-layout {
+    justify-self: center;
+    align-self: center;
+    padding-left: 5%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+
+/*kommenttiboksi*/
+
+.input-container {
+    margin: 20px 0px;
+    display: flex;
+  
+  }
+  
+  .input-field {
+    height: 30px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 0 5px;
+  }
+  
+  .input-button {
+    height: 30px;
+    padding: 0px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 0 10px;
+    background-color: #68edff;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .input-button:hover {
+    background-color: #40cee0;
+  }

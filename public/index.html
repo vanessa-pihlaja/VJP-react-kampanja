@@ -1,43 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rokottaminen</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--Scroll reveal CDN-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container1" id="start">
+            <a href="https://thl.fi/fi/" class="thl_logo">
+            <img src="thl-logo-fi.png" alt="" style="width:10em; height:1.9em;">
+            </a>
+        </div>
+        <div class="container2">
+            <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link active">Etusivu</a>
+                </li>
+                <li class="nav-item">
+                  <a href="rokottaminen Suomessa.html" class="nav-link">Rokottaminen Suomessa</a>
+                </li>
+                <li class="nav-item">
+                  <a href="disinformaatio.html" class="nav-link">Disinformaatio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="tarinoita.html" class="nav-link">Tarinoita</a>
+                </li>
+              </ul> 
+        </div>
+    </header>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <section class="hero" id="hero">
+      <div class="container3">
+          <h1 class headline>Rokottaminen - Suojelet omaasi ja yhteisöäsi</h1>
+      </div>
+  </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <section class="faktalaatikko">
+    <div class="faktapallura">
+      Rokotteet estävät maailmassa joka vuosi 2–3 miljoonan lapsen kuoleman
+    </div>
+    <div class="faktapallura">
+      Osassa Suomen maakunnista jopa yli 3% lapsista on rokottamattomia
+    </div>
+    <div class="faktapallura">
+      <div class="kolmaspallura">
+        Suomessa jokaisella lapsella on mahdollisuus saada rokotus 13:a eri tautia, niiden jälkitauteja ja pitkäaikaisia haittoja vastaan
+      </div>
+    </div>
+  </section>
+  
+  <section class="ht-palkki">
+    <div class="herättelevä-teksti-otsikko">
+      Rokottaminen on valinta, joka vaikuttaa koko yhteisöön.
+    </div>
+    <div class="herättelevä-teksti">
+      Suomessa on ollut jo pitkään hyvä rokotuskattavuus, jolla on voitu estää vakavien tautien leviäminen yhteiskunnassa. 
+      Jokainen tuleva tai tuore vanhempi on kuitenkin valinnan edessä, ja vaikuttaa siihen, onko laumasuojaa tulevaisuudessa olemassa. 
+      Sinä voit vaikuttaa siihen, pysyvätkö lapsemme jatkossakin turvassa vakavilta taudeilta, jotka ovat estettävissä.
+    </div>
+  </section>
+  
+  <div class="Seuraa-meitä">
+    Seuraa meitä @rokotekampanja
+  </div>
+  <div id="curator-feed-vdm-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag"></a></div>
+  <script type="text/javascript">
+ (function(){
+ var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+ i.src = "https://cdn.curator.io/published/fb374d18-22b4-4187-b0b8-982952e7e866.js";
+ e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+ })();
+ </script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <footer>
+     <div class="back-to-top">
+        <a href="#start"><i class="fas fa-chevron-up"></i></a>
+     </div>
+     <div class="footer-content">
+         <div class="social-media">
+         <h4>Seuraa kampanjaa sosiaalisessa mediassa</h4>
+          <ul class="social-icons">
+             <li>
+              <a href='https://www.instagram.com/thl.fi/?hl=fi'><i class="fab fa-instagram"></i></a>
+             </li>
+             <li>
+               <a href='https://www.facebook.com/thl.fi'><i class="fab fa-facebook-square"></i></a>
+             </li>
+             <li>
+               <a href='https://twitter.com/thlorg?lang=fi'><i class="fab fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        <div class="logo2">
+          <a href="https://thl.fi/fi/" class="thl_logo1">
+          <img src="thl-logo-fi.png" alt="" style="width:18em; height:3.5em;">
+          </a>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+
 </html>
