@@ -72,7 +72,7 @@ body {
 .hero {
     width: 100%;
     height: 100vh;
-    background: url("images/baby.etusivu.jpeg");
+    background: url("./images/baby.etusivu.jpeg");
     background-size: cover;
     display: flex;
 }
@@ -80,7 +80,7 @@ body {
 .hero2{
     width: 100%;
     height: 100vh;
-    background: url("images/toinen\ vauva\ ja\ rokote.jpg");
+    background: url("./images/toinen\ vauva\ ja\ rokote.jpg");
     background-size: cover;
     display: flex;
 }
@@ -88,7 +88,7 @@ body {
 .hero3{
     width: 100%;
     height: 100vh;
-    background: url("images/vauvajapyyhe.jpg");
+    background: url("./images/vauvajapyyhe.jpg");
     background-size: cover;
     display: flex;
 }

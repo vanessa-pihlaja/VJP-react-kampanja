@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // Voit käyttää näitä tyylejä elementeille jos tahdot.
-import "styles.css";
+
 
 // Todo-listalle tehdään uusia merkintöjä input-elementin avulla.
 // Elementtiin tehdään testikenttä, joka tallentaa sisältönsä

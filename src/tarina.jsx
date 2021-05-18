@@ -1,6 +1,6 @@
 import React from "react";
-import App from "./main";
-import "./styles.css";
+
+
 
 // Tässä komponentissa majailee yksittäinen listalla oleva
 // elementti.

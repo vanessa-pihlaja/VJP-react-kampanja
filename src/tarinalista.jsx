@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import App from "./main";
 import { TodoItem } from "./tarina";
 // Tuo tähän elementtiin propsina todo-listasi elementit.
 // Tuota lista divin sisälle listan map-funktiolla. Jokainen
