@@ -444,3 +444,28 @@ ui{
   .input-button:hover {
     background-color: #40cee0;
   }
+
+ .App {
+     justify-content: center;
+     padding-left: 12%;
+ }
+
+ .tarinalista {
+     max-width: 60%;
+ }
+
+ .tarina {
+     padding-top: 3rem;
+     font-family:'Montserrat', sans-serif;
+     font-size: 14px;
+     font-weight: 150;
+ }
+
+ textarea {
+     width: 35rem;
+     height: 10rem;
+ }
+
+ .inputfield {
+     padding-bottom: 5rem;
+ }

@@ -1,56 +1,34 @@
   import React from "react";
   import "./styles.css";
-  import TodoList from "./tarinalista";
-  import AddInput from "./tarinanlisäysnamiska";
-  import TodoItem from "./tarina";
-  import { useState } from "react";
+ 
+ 
   import _ from "lodash";
+  
+  import {BrowserRouter as Router,Route,Switch, Link} from "react-router-dom" 
+  import Disinformaatio from "./disinformaatio"
+  import Rokottaminen_Suomessa from "./rokottaminen Suomessa"
+  import Tarinoita from "./tarinoita"
+  import Etusivu from "./etusivu"
+  import Navigaatio from "./navigaatio"
+  
 
   
   export default function App() {
-    // Tee tähän reactin tilaan kytkeytyvä useState-hook,
-    // joka pitää sisällään Todo-listan elementit. Lista voi
-    // olla aluksi tyhjä ([]). Muista vaihtaa tämä uusi lista
-    // myös TodoListin proppeihin!
-  
-    // Tähän kannattaa tehdä kaikki funktiot, joilla listaa
-    // muokataan. Esim. listaan lisääminen, listasta poistaminen,
-    // listaelementin siirtäminen. Funktiot voi lähettää muille
-    // komponenteille propseina.
-  
-    // Allaolevaan rakenteeseen lisätään komponentit listaelementille
-    // ja lisäyselementille.
-    const [listItem, setListItem] = useState([]);
-  
-    function addListItem(item) {
-      const newItemList = listItem.concat({ text: item, status: false });
-      if (!listItem.some((x) => x.text === item)) {
-        setListItem(newItemList);
-      } else {
-        console.log("Can't add duplicates!");
-      }
-    }
-  
-    function markDone(task) {
-      const newList = [...listItem];
-  
-      const item = newList.find(({ text }) => text === task);
-      console.log(item.status);
-  
-      item.status = !item.status;
-      console.log(item.status);
-      setListItem(newList);
-    }
-  
+
     return (
-      <div className="App">
-        <h1>TO-DO</h1>
-        <TodoList listItems={listItem} markDone={(done) => markDone(done)} />
-        <AddInput addListItem={addListItem} />
-        <div className="doneMessage">
-          {_.every(listItem, ["status", true]) ? "Done!" : "Not done :("}
-        </div>
-      </div>
+      <Router>
+        <Navigaatio></Navigaatio>
+
+      <Switch>
+
+        <Route path="/etusivu"><Etusivu/></Route>
+        <Route path="/tarinoita"><Tarinoita/></Route>
+        <Route path="/rokottaminen Suomessa"><Rokottaminen_Suomessa/></Route>
+        <Route path="/disinformaatio"><Disinformaatio/></Route>
+        <Route path="/"></Route>
+      </Switch>
+      
+      </Router>
     );
   }
 
