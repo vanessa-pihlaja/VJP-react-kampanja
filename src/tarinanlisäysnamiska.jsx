@@ -8,7 +8,6 @@ export default function AddInput(props) {
       <label className ="inputfield">
         <textarea
           type="text"
-          rows="10"
           value={itemName}
           onChange={(e) => setItemName(e.target.value)}
         />

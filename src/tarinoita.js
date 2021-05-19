@@ -1,5 +1,5 @@
 import React from "react"
-import TodoList from "./tarinalista";
+import Tarinalista from "./tarinalista";
   import AddInput from "./tarinanlisäysnamiska";
   import { useState } from "react";
   import _ from "lodash";
@@ -10,30 +10,24 @@ const Tarinoita = () => {
     const [listItem, setListItem] = useState([]);
   
     function addListItem(item) {
-      const newItemList = listItem.concat({ text: item, status: false });
-      if (!listItem.some((x) => x.text === item)) {
+      const newItemList = listItem.concat({ text: item});
         setListItem(newItemList);
-      } else {
-        console.log("Can't add duplicates!");
-      }
+      
     }
   
-    function markDone(task) {
-      const newList = [...listItem];
-  
-      const item = newList.find(({ text }) => text === task);
-      console.log(item.status);
-  
-      item.status = !item.status;
-      console.log(item.status);
-      setListItem(newList);
-    }
 
     return ( <div>
-        
+        <section className="hero4">
+    <div className="container3">
+       <h1 className headline>Tarinoita</h1>
+    </div>
+    </section>
         <section>
           <div className="blogiosionotsikko">Liisan ja 11-kuukautisen Emilin tarina</div>
-          <div className="blogi">
+          <div className="blogikuva">
+               <img src="images/mom-and-child-in-autumn.jpg" />
+               
+             </div>
             <div className="blogiteksti">
               <div className="osio">Ketä uskoa ja miksi? 13.05.2021
               </div>
@@ -49,42 +43,42 @@ const Tarinoita = () => {
               </div>
               <div className="osio">Puolisoni tarina hätkähdytti. Tajusin rokottamatta jättämisen olevan myös riski. Eikä ainoastaan riski meille, vaan myös muille. Se pysäytti. Koen olevani empaattinen ihminen enkä koskaan tahtoisi satuttaa muita, saatikka omaa lastani. Jos nyt panen alulle tuhkarokkoepidemian, saanko sitä enää koskaan anteeksi. Entä jos meidän lapsemme sairastuu siihen vakavasti. Tein sen, mitä ei koskaan saisi tehdä, eli luin terveyskirjastosta tautikuvausta tuhkarokosta. En ollut päässyt edes kolmatta kappaletta loppuun, kun jo näppäilin neuvolan numeroa puhelimeeni. Ehkä näin oli parempi. Vaikka joku rahamies tästä hyötyisikin, en ainakaan ole itse aiheuttanut harmia muille. 
               </div>
-           </div>
-          <div className="blogiteksti">
-             <div className="blogikuva">
-               <img src="images/mom-and-child-in-autumn.jpg" alt="Nainen (Liisa) ja 11-kuutautinen vauva (Emil)"/>
-               <div>Liisa ja Emil. </div>
-             </div>
-          </div>
-        </div>
+              </div>
+        
         </section>
         
         <div id= "root"></div>
         <div className="App">
-        <h1>Jaa oma rokotustarinasi</h1>
-        <TodoList listItems={listItem} markDone={(done) => markDone(done)} />
+        <h1 id= "rokotustarinaotsikko">Jaa oma rokotustarinasi</h1>
+        <Tarinalista listItems={listItem}/>
         <AddInput addListItem={addListItem} />
       </div>
     
+      
     
     <footer>
-      <div className="back-to-top">
-         <a href="#start"><i className="fas fa-chevron-up"></i></a>
-      </div>
+    <div className="back-to-top">
+      <div className="nuoliholder">
+     <a href="#start"><p><i className="arrow up"></i></p></a></div>
+  </div>
       <div className="footer-content">
           <div className="social-media">
           <h4>Seuraa kampanjaa sosiaalisessa mediassa</h4>
-           <ul className="social-icons">
-              <li>
-               <a href='#'><i className="fab fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href='#'><i className="fab fa-facebook-square"></i></a>
-              </li>
-              <li>
-                <a href='#'><i className="fab fa-twitter"></i></a>
-               </li>
-             </ul>
+          <ul className="social-icons">
+
+       
+<a href="https://www.instagram.com/thl.fi/?hl=fi">
+<img className="instagram-logo" style={{width:"3.5em", height:"3.5em"}}/>
+</a>
+
+<a href="https://www.facebook.com/thl.fi">
+<img className="facebook-logo" style={{width:"3.5em", height:"3.5em"}}/>
+</a>
+
+<a href="https://twitter.com/thlorg?lang=fi">
+<img className="twitter-logo" style={{width:"3.5em", height:"3.5em"}}/>
+</a>
+  </ul>
            </div>
          <div className="logo2">
            <a href="https://thl.fi/fi/" className="thl_logo1">

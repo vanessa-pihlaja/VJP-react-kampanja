@@ -48,21 +48,24 @@ const Disinformaatio = () => {
 
 <footer>
   <div className="back-to-top">
-     <a href="#start"><i className="fas fa-chevron-up"></i></a>
+      <div className="nuoliholder">
+     <a href="#start"><p><i className="arrow up"></i></p></a></div>
   </div>
   <div className="footer-content">
       <div className="social-media">
       <h4>Seuraa kampanjaa sosiaalisessa mediassa</h4>
-       <ul className="social-icons">
-          <li>
-           <a href='#'><i className="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href='#'><i className="fab fa-facebook-square"></i></a>
-          </li>
-          <li>
-            <a href='#'><i className="fab fa-twitter"></i></a>
-           </li>
+      <ul className="social-icons">
+        <a href="https://www.instagram.com/thl.fi/?hl=fi">
+        <img className="instagram-logo" style={{width:"3.5em", height:"3.5em"}}/>
+        </a>
+
+        <a href="https://www.facebook.com/thl.fi">
+        <img className="facebook-logo" style={{width:"3.5em", height:"3.5em"}}/>
+        </a>
+
+        <a href="https://twitter.com/thlorg?lang=fi">
+        <img className="twitter-logo" style={{width:"3.5em", height:"3.5em"}}/>
+        </a>
          </ul>
        </div>
      <div className="logo2">

@@ -1,6 +1,35 @@
 import React from "react"
 
 const Etusivu = () => {
+    class CuratorWidget extends React.Component {
+        constructor(props) {
+          super(props);
+          this.loadScript = this.loadScript.bind(this)
+        }
+      
+        loadScript(src, libraryId) {
+          return new Promise((resolve) => {
+            const script = document.createElement('script');
+            script.src = src;
+            script.id = libraryId;
+            document.body.appendChild(script);
+      
+            script.onload = () => {
+              // add a small timeout to give it time to load
+              setTimeout(() => {
+                resolve(true);
+              }, 100);
+            };
+          });
+        }
+      
+        componentDidMount() {
+          this.loadScript('https://cdn.curator.io/published/' + this.props.feedId + '.js');
+        }
+      
+        render() {
+          return <div data-crt-feed-id={this.props.feedId} id="curator-feed-vdm-layout"></div>;
+        }} 
     return (
  <div>
 
@@ -36,35 +65,38 @@ const Etusivu = () => {
 </section>
 
 <div className="Seuraa-meitä">
- Seuraa meitä @rokotekampanja
+ Seuraa meitä Instagramissa @rokotekampanja
 </div>
+<div className="Seuraa-meitä">Käytä aihetunnistetta #valitsenrokottamisen jakaaksesi oman tarinasi</div>
 <div id="curator-feed-vdm-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag"></a></div>
-<script type="text/javascript">
-/* curator-feed-vdm-layout */
-{(function(){
-var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
-i.src = "https://cdn.curator.io/published/fb374d18-22b4-4187-b0b8-982952e7e866.js";
-e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-})()};
-</script>
+
+
+<CuratorWidget feedId="fb374d18-22b4-4187-b0b8-982952e7e866"/>
+
 
 <footer>
-  <div className="back-to-top">
-     <a href="#start"><i className="fas fa-chevron-up"></i></a>
+<div className="back-to-top">
+      <div className="nuoliholder">
+     <a href="#start"><p><i className="arrow up"></i></p></a></div>
   </div>
   <div className="footer-content">
       <div className="social-media">
       <h4>Seuraa kampanjaa sosiaalisessa mediassa</h4>
+    
        <ul className="social-icons">
-          <li>
-           <a href="https://www.instagram.com/thl.fi/?hl=fi"><i className="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href='https://www.facebook.com/thl.fi'><i className="fab fa-facebook-square"></i></a>
-          </li>
-          <li>
-            <a href='https://twitter.com/thlorg?lang=fi'><i className="fab fa-twitter"></i></a>
-           </li>
+
+       
+       <a href="https://www.instagram.com/thl.fi/?hl=fi">
+       <img className="instagram-logo" style={{width:"3.5em", height:"3.5em"}}/>
+       </a>
+       
+       <a href="https://www.facebook.com/thl.fi">
+       <img className="facebook-logo" style={{width:"3.5em", height:"3.5em"}}/>
+       </a>
+       
+       <a href="https://twitter.com/thlorg?lang=fi">
+       <img className="twitter-logo" style={{width:"3.5em", height:"3.5em"}}/>
+       </a>
          </ul>
        </div>
      <div className="logo2">
