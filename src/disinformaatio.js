@@ -70,7 +70,7 @@ const Disinformaatio = () => {
        </div>
      <div className="logo2">
        <a href="https://thl.fi/fi/" className="thl_logo1">
-       <img src="thl-logo-fi.png" alt="THL:n logo" style={{width:"18em", height:"3.5em"}}></img>
+       <img className="thl" style={{width:"18em", height:"3.5em"}}/>
        </a>
    </div>
  </div>

@@ -25,8 +25,7 @@ const Tarinoita = () => {
         <section>
           <div className="blogiosionotsikko">Liisan ja 11-kuukautisen Emilin tarina</div>
           <div className="blogikuva">
-               <img src="images/mom-and-child-in-autumn.jpg" />
-               
+               <img className="Liisa"/>  
              </div>
             <div className="blogiteksti">
               <div className="osio">Ketä uskoa ja miksi? 13.05.2021
@@ -82,8 +81,8 @@ const Tarinoita = () => {
            </div>
          <div className="logo2">
            <a href="https://thl.fi/fi/" className="thl_logo1">
-           <img src="thl-logo-fi.png" alt="" style={{width:"18em", height:"3.5em"}}/>
-           </a>
+           <img className="thl" style={{width:"18em", height:"3.5em"}}/>
+            </a>
        </div>
      </div>
     </footer>

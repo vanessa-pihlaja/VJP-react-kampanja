@@ -68,6 +68,11 @@ body {
     text-shadow: 1px 1px 3px rgb(167, 167, 167)
 }
 
+.thl{
+    src: url("./thl-logo-fi.png");
+    background: url("./thl-logo-fi.png");
+    background-size: contain;
+}
 .hero {
     width: 100%;
     height: 100vh;
@@ -107,6 +112,12 @@ body {
     
 }
 
+.Liisa{
+    background: url("./images/mom-and-child-in-autumn.jpg");
+  
+    background-repeat: no-repeat;
+    background-position: center ;
+}
 
 /*Etusivun faktalaatikko*/
 
@@ -384,6 +395,8 @@ ui{
     overflow: hidden;
     justify-content: center;
     display: flex;
+    width: 30px;
+    height: 30px;
 }
 
 

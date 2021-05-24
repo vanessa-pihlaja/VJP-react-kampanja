@@ -101,8 +101,7 @@ const Etusivu = () => {
        </div>
      <div className="logo2">
        <a href="https://thl.fi/fi/" className="thl_logo1">
-       <img src="thl-logo-fi.png" alt="" style={{width:"18em", height:"3.5em"}}/>
-       </a>
+       <img className="thl" style={{width:"18em", height:"3.5em"}}/>       </a>
    </div>
  </div>
 </footer>

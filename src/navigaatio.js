@@ -5,7 +5,7 @@ const Navigaatio = () => {
         <div>
         <div className="container1" id="start">
             <a href="https://thl.fi/fi/" className="thl_logo">
-            <img src="thl-logo-fi.png" alt="" style={{width:"10em", height:"1.9em"}}/>
+            <img className="thl" style={{width:"10em", height:"1.9em"}}/>
             </a>
         </div>
         <div className="container2">
