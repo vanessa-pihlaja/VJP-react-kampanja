@@ -15,7 +15,7 @@
     return (
       
       <div>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
           <Navigaatio/>
            <div>
              <Switch>
